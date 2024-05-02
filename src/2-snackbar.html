@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+        integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,24 +19,24 @@
     <a href="./index.html">Back</a>
 
     <form class="form">
-        <label>
+        <label class="delay-label">
             Delay (ms)
-            <input type="number" name="delay" required />
+            <input class="delay-input" type="number" name="delay" min="0" required />
         </label>
 
-        <fieldset>
+        <fieldset class="sel-area">
             <legend>State</legend>
-            <label>
-                <input type="radio" name="state" value="fulfilled" required />
+            <label class="sel-label-fullfilled">
+                <input class="radio" type="radio" name="state" value="fulfilled" required />
                 Fulfilled
             </label>
-            <label>
-                <input type="radio" name="state" value="rejected" required />
+            <label class="sel-label-rejected">
+                <input class="radio" type="radio" name="state" value="rejected" required />
                 Rejected
             </label>
         </fieldset>
 
-        <button type="submit">Create notification</button>
+        <button class="create-btn" type="submit">Create notification</button>
     </form>
 
 
