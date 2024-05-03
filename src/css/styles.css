@@ -5,7 +5,8 @@ body {
 /* TASK-1 */
 
 .container {
-  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 .datetime-picker {
@@ -21,6 +22,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+.pick-start {
+  margin: 0 auto;
 }
 
 .datetime-picker:hover {
@@ -66,9 +71,10 @@ body {
 }
 
 .timer {
-  margin-top: 32px;
   display: flex;
   gap: 24px;
+  margin: 0 auto;
+  margin-top: 32px;
 }
 
 .value {
