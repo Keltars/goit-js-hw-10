@@ -82,6 +82,7 @@ const startTimer = targetTime => {
       });
       refs.startButton.disabled = false;
       refs.inputDate.disabled = false;
+      refs.startButton.disabled = true;
     } else {
       timerUpd(deltaTime);
     }
