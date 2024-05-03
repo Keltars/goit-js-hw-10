@@ -15,12 +15,12 @@ const refs = {
   secondsEl: document.querySelector('[data-seconds]'),
 };
 
-refs.startButton.disabled = false;
+refs.startButton.disabled = true;
 
 const options = {
   enableTime: true,
   time_24hr: true,
-  defaultDate: '',
+  defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] <= new Date().getTime()) {
@@ -32,6 +32,7 @@ const options = {
       refs.startButton.disabled = false;
     } else {
       userSelectedDate = selectedDates[0];
+      refs.startButton.disabled = false;
     }
   },
 };

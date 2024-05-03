@@ -67,7 +67,6 @@ body {
 .start-btn:disabled {
   background: rgb(207, 207, 207);
   color: rgb(152, 152, 152);
-  cursor: not-allowed;
 }
 
 .timer {
