@@ -29,7 +29,7 @@ const options = {
         message: 'Please choose a date in the future',
         position: 'topRight',
       });
-      refs.startButton.disabled = false;
+      refs.startButton.disabled = true;
     } else {
       userSelectedDate = selectedDates[0];
       refs.startButton.disabled = false;
